@@ -3,11 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>My Gallery</title>
+
+    <!-- Keep the Bootstrap link the same as the home page -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav></nav>
-    <header></header>
+    <!-- Navigation: keep this section the same on every page -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Felix</a>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page introduction -->
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <p class="text-uppercase fw-bold hero-label">My work and memories</p>
+        <h1 class="display-3 fw-bold mb-4">My Gallery</h1>
+        <p class="lead mb-0">
+          A collection of my learning journey, projects, and interests.
+        </p>
+      </div>
+    </header>
+
+    <!-- Motivation video -->
+    <section class="overview py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">My Motivation</h2>
+        <p class="text-secondary">
+          <!-- Change this sentence to introduce your own video -->
+          A short video about my goals and what motivates me to keep learning.
+        </p>
+
+        <!-- Record your own video and save it as motivation.mp4 in this project folder -->
+        <video class="w-100 rounded" controls>
+          <source src="motivation.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- Photo gallery -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">My Photos and Projects</h2>
+          <p class="text-secondary">
+            <!-- Use your own photos or screenshots -->
+            Some moments and projects from my learning journey.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Put photo1.jpg in the project folder, or change the filename below -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="photo1.jpg"
+                class="card-img-top"
+                alt="A photo related to my studies"
+              />
+              <div class="card-body">
+                <h3 class="h5">My Studies</h3>
+                <p class="text-secondary mb-0">
+                  <!-- Add a caption that describes your actual photo -->
+                  My student life and learning experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Put photo2.jpg in the project folder, or change the filename below -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="photo2.jpg"
+                class="card-img-top"
+                alt="A project I have worked on"
+              />
+              <div class="card-body">
+                <h3 class="h5">My Projects</h3>
+                <p class="text-secondary mb-0">
+                  I have worked on a Gossip Website and it is Fully functional.
+                  HAve also worked on many Game projects
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Put photo3.jpg in the project folder, or change the filename below -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="photo3.jpg"
+                class="card-img-top"
+                alt="An interest or hobby of mine"
+              />
+              <div class="card-body">
+                <h3 class="h5">My Interests</h3>
+                <p class="text-secondary mb-0">
+                  Playing Football and also Exploring new technologies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer: keep this section the same on every page -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h2 class="h5">Felix Jonathan</h2>
+
+        <div class="d-flex justify-content-center gap-4 my-3">
+          <a class="social-link" href="https://github.com/Felitix/">GitHub</a>
+          <a class="social-link" href="https://www.linkedin.com/">LinkedIn</a>
+          <a class="social-link" href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <p class="small text-secondary mb-0">
+          © 2026 Felix Jonathan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

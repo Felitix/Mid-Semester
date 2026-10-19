@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Contact Me</title>
+
+    <!-- Keep the Bootstrap link the same as the home page -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,16 +14,158 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav>
-      <ul class="nav bg-dark">
-        <li class="text-white"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Navigation: keep this section the same on every page -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Felix</a>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <header></header>
+
+    <!-- Page introduction -->
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <p class="text-uppercase fw-bold hero-label">Get in touch</p>
+        <h1 class="display-3 fw-bold mb-4">Contact Me</h1>
+        <p class="lead mb-0">
+          Feel free to contact me about my work, studies, or projects.
+        </p>
+      </div>
+    </header>
+
+    <!-- Contact information and form -->
+    <section class="overview py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Update these details with the contact information you want to share -->
+          <div class="col-md-5">
+            <h2 class="fw-bold mb-4">My Information</h2>
+
+            <p>
+              <strong>Email:</strong>
+              <!-- Replace this with an email address you can share publicly -->
+              <a href="mailto:felixssenkasi@gmail.com">
+                felixssenkasi@gmail.ocm
+              </a>
+            </p>
+
+            <p>
+              <strong>Phone:</strong>
+              +256740680668
+            </p>
+
+            <p>
+              <strong>Location:</strong>
+              Bugema Wakiso
+            </p>
+
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/Felitix/" target="_blank">
+                My GitHub profile
+              </a>
+            </p>
+
+            <p>
+              <strong>LinkedIn:</strong>
+              <!-- Replace this link with your own profile if you have one -->
+              <a href="https://www.linkedin.com/" target="_blank"> LinkedIn </a>
+            </p>
+          </div>
+
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-4">Send a Message</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter the subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h2 class="h5">Felix Jonathan</h2>
+
+        <div class="d-flex justify-content-center gap-4 my-3">
+          <a class="social-link" href="https://github.com/Felitix/">GitHub</a>
+          <a class="social-link" href="https://www.linkedin.com/">LinkedIn</a>
+          <a class="social-link" href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <p class="small text-secondary mb-0">
+          © 2026 Felix Jonathan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

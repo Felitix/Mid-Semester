@@ -3,11 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>About Me</title>
+
+    <!-- Keep the Bootstrap link the same as the home page -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav></nav>
-    <header></header>
+    <!-- Navigation: keep this section the same on every page -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Felix</a>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page introduction -->
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <p class="text-uppercase fw-bold hero-label">Get to know me</p>
+        <h1 class="display-3 fw-bold mb-4">About Me</h1>
+        <p class="lead mb-0">
+          <!-- Replace this with a short introduction in your own words -->
+          Learn more about my background, education, skills, and interests.
+        </p>
+      </div>
+    </header>
+
+    <!-- Biography -->
+    <section class="overview py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">My Story</h2>
+
+        <!-- Write a few sentences about yourself here -->
+        <p>
+          My name is Felix Jonathan. I am a student who is learning about
+          technology and web development. I enjoy learning new skills and
+          finding ways to improve my work.
+        </p>
+        <p>
+          <!-- Add your own goals, experiences, or reasons for choosing your course -->
+          One of my goals is to develop my knowledge of website design and learn
+          how to create useful websites.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education and coursework -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Education and Coursework</h2>
+
+        <!-- Change the details below to match your actual education -->
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Course or Subject</th>
+                <th scope="col">What I Learn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Development</td>
+                <td>Creating web pages using HTML and CSS.</td>
+              </tr>
+              <tr>
+                <td>Bootstrap</td>
+                <td>Making web pages responsive on different screens.</td>
+              </tr>
+              <tr>
+                <td>Software Engineering</td>
+                <td>Learning the basics of software development.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="overview py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">My Skills</h2>
+        <p class="text-secondary">
+          <!-- Keep only the skills you have started learning -->
+          These are some of the skills I am currently developing.
+        </p>
+
+        <span class="badge bg-primary me-2 mb-2">HTML</span>
+        <span class="badge bg-primary me-2 mb-2">CSS</span>
+        <span class="badge bg-primary me-2 mb-2">Bootstrap</span>
+        <span class="badge bg-primary me-2 mb-2">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- Interests and hobbies -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Interests and Hobbies</h2>
+
+        <!-- Replace or add hobbies that genuinely describe you -->
+        <p>
+          Outside my studies, I enjoy exploring technology, learning new things,
+          and working on personal projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer: keep this section the same on every page -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h2 class="h5">Felix Jonathan</h2>
+
+        <div class="d-flex justify-content-center gap-4 my-3">
+          <a class="social-link" href="https://github.com/Felitix/">GitHub</a>
+          <a class="social-link" href="https://www.linkedin.com/">LinkedIn</a>
+          <a class="social-link" href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <p class="small text-secondary mb-0">
+          © 2026 Felix Jonathan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
