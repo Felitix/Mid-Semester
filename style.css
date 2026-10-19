@@ -19,7 +19,7 @@ body {
 
 .hero {
   min-height: calc(100vh - 56px);
-  background: linear-gradient(135deg, #0d6efd, #14213d);
+  background: linear-gradient(135deg, rgb(13, 110, 253), rgb(20, 33, 61));
   color: white;
   padding: 40px 0;
 }
@@ -52,17 +52,13 @@ body {
 }
 
 .overview {
-  background: #f8f9fa;
+  background: rgb(248, 249, 250);
 }
 
 .overview .card {
   border: none;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s;
-}
-
-.overview .card:hover {
-  transform: translateY(-5px);
 }
 
 .social-link {
